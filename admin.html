@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Mobola Physiotherapy & Gym Center</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .admin-section { display: none; }
+    .admin-section[data-section="hero"] { display: block; }
+    @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+  </style>
+<base target="_blank">
+</head>
+<body>
+  <!-- Login Screen -->
+  <div class="admin-login">
+    <div class="admin-login-box">
+      <div class="logo" style="margin-bottom: 24px;">
+        <span class="logo-text">MOBOLA</span>
+        <span class="logo-sub">Physiotherapy & Gym Center</span>
+      </div>
+      <h2>Admin Login</h2>
+      <form class="admin-login-form" style="text-align: left;">
+        <div class="admin-form-group">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Enter admin password" required style="width: 100%;">
+        </div>
+        <p class="login-error" style="color: #dc3545; font-size: 0.9rem; margin-bottom: 16px; display: none;"></p>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+      </form>
+      <p style="margin-top: 20px; font-size: 0.85rem; color: var(--text-muted);">
+        Default password: <code>MobolaAdmin2024!</code>
+      </p>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="admin-dashboard">
+    <aside class="admin-sidebar">
+      <div class="logo">
+        <span class="logo-text">MOBOLA</span>
+        <span class="logo-sub">Admin Panel</span>
+      </div>
+      <ul class="admin-nav">
+        <li><a href="#" data-section="hero" class="active">&#127968; Hero Section</a></li>
+        <li><a href="#" data-section="about">&#128100; About Content</a></li>
+        <li><a href="#" data-section="services">&#129331; Services</a></li>
+        <li><a href="#" data-section="faq">&#10067; FAQ</a></li>
+        <li><a href="#" data-section="contact">&#128222; Contact Info</a></li>
+        <li><a href="#" data-section="hours">&#128336; Business Hours</a></li>
+        <li><a href="#" data-section="pricing">&#128176; Pricing</a></li>
+      </ul>
+      <button class="admin-logout" style="margin-top: 40px; width: 100%;">Logout</button>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-header">
+        <h1>Content Management</h1>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <span style="color: var(--text-muted); font-size: 0.9rem;">Manage website content</span>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="admin-section" data-section="hero">
+        <div class="admin-card">
+          <h3>Hero Section Content</h3>
+          <div class="admin-form-group">
+            <label>Badge Text</label>
+            <input type="text" name="hero_badge" placeholder="Premium Care in Abeokuta">
+          </div>
+          <div class="admin-form-group">
+            <label>Hero Title</label>
+            <input type="text" name="hero_title" placeholder="Restore Your Body. Build Your Strength.">
+          </div>
+          <div class="admin-form-group">
+            <label>Hero Subtitle</label>
+            <textarea name="hero_subtitle" placeholder="Supporting text..."></textarea>
+          </div>
+          <div class="admin-form-row">
+            <div class="admin-form-group">
+              <label>Primary CTA</label>
+              <input type="text" name="hero_cta_primary" placeholder="Book Appointment">
+            </div>
+            <div class="admin-form-group">
+              <label>Secondary CTA</label>
+              <input type="text" name="hero_cta_secondary" placeholder="Join the Gym">
+            </div>
+          </div>
+          <button class="admin-btn-save" data-section="hero">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="admin-section" data-section="about">
+        <div class="admin-card">
+          <h3>About Content</h3>
+          <div class="admin-form-group">
+            <label>Preview Title</label>
+            <input type="text" name="about_preview_title">
+          </div>
+          <div class="admin-form-group">
+            <label>Preview Text</label>
+            <textarea name="about_preview_text"></textarea>
+          </div>
+          <div class="admin-form-group">
+            <label>Mission</label>
+            <textarea name="about_mission"></textarea>
+          </div>
+          <div class="admin-form-group">
+            <label>Story</label>
+            <textarea name="about_story"></textarea>
+          </div>
+          <div class="admin-form-group">
+            <label>Vision</label>
+            <textarea name="about_vision"></textarea>
+          </div>
+          <div class="admin-form-group">
+            <label>Philosophy</label>
+            <textarea name="about_philosophy"></textarea>
+          </div>
+          <button class="admin-btn-save" data-section="about">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <div class="admin-section" data-section="services">
+        <div class="admin-card">
+          <h3>Services Content</h3>
+          <div style="margin-bottom: 24px; padding: 16px; background: var(--secondary); border-radius: 8px;">
+            <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">
+              Edit service titles, descriptions, and CTA buttons. Images must be replaced directly in the <code>images/</code> folder.
+            </p>
+          </div>
+          <div style="display: grid; gap: 24px;">
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px; color: var(--primary);">Physiotherapy</h4>
+              <div class="admin-form-group"><label>Title</label><input type="text" name="service_physiotherapy_title"></div>
+              <div class="admin-form-group"><label>Description</label><textarea name="service_physiotherapy_desc"></textarea></div>
+              <div class="admin-form-group"><label>CTA Text</label><input type="text" name="service_physiotherapy_cta"></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px; color: var(--primary);">Massage Therapy</h4>
+              <div class="admin-form-group"><label>Title</label><input type="text" name="service_massage_title"></div>
+              <div class="admin-form-group"><label>Description</label><textarea name="service_massage_desc"></textarea></div>
+              <div class="admin-form-group"><label>CTA Text</label><input type="text" name="service_massage_cta"></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px; color: var(--primary);">Gym Membership</h4>
+              <div class="admin-form-group"><label>Title</label><input type="text" name="service_gym_title"></div>
+              <div class="admin-form-group"><label>Description</label><textarea name="service_gym_desc"></textarea></div>
+              <div class="admin-form-group"><label>CTA Text</label><input type="text" name="service_gym_cta"></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px; color: var(--primary);">Home Physiotherapy</h4>
+              <div class="admin-form-group"><label>Title</label><input type="text" name="service_homePhysio_title"></div>
+              <div class="admin-form-group"><label>Description</label><textarea name="service_homePhysio_desc"></textarea></div>
+              <div class="admin-form-group"><label>CTA Text</label><input type="text" name="service_homePhysio_cta"></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px; color: var(--primary);">Home Massage</h4>
+              <div class="admin-form-group"><label>Title</label><input type="text" name="service_homeMassage_title"></div>
+              <div class="admin-form-group"><label>Description</label><textarea name="service_homeMassage_desc"></textarea></div>
+              <div class="admin-form-group"><label>CTA Text</label><input type="text" name="service_homeMassage_cta"></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px; color: var(--primary);">Consultation</h4>
+              <div class="admin-form-group"><label>Title</label><input type="text" name="service_consultation_title"></div>
+              <div class="admin-form-group"><label>Description</label><textarea name="service_consultation_desc"></textarea></div>
+              <div class="admin-form-group"><label>CTA Text</label><input type="text" name="service_consultation_cta"></div>
+            </div>
+          </div>
+          <button class="admin-btn-save" data-section="services" style="margin-top: 24px;">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="admin-section" data-section="faq">
+        <div class="admin-card">
+          <h3>FAQ Content</h3>
+          <div style="margin-bottom: 16px; padding: 12px; background: var(--secondary); border-radius: 8px; font-size: 0.9rem; color: var(--text-muted);">
+            Edit the 5 FAQ items below. Changes will appear immediately on the website.
+          </div>
+          <div style="display: grid; gap: 20px;">
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px;">FAQ 1</h4>
+              <div class="admin-form-group"><label>Question</label><input type="text" name="faq_0_question"></div>
+              <div class="admin-form-group"><label>Answer</label><textarea name="faq_0_answer"></textarea></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px;">FAQ 2</h4>
+              <div class="admin-form-group"><label>Question</label><input type="text" name="faq_1_question"></div>
+              <div class="admin-form-group"><label>Answer</label><textarea name="faq_1_answer"></textarea></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px;">FAQ 3</h4>
+              <div class="admin-form-group"><label>Question</label><input type="text" name="faq_2_question"></div>
+              <div class="admin-form-group"><label>Answer</label><textarea name="faq_2_answer"></textarea></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px;">FAQ 4</h4>
+              <div class="admin-form-group"><label>Question</label><input type="text" name="faq_3_question"></div>
+              <div class="admin-form-group"><label>Answer</label><textarea name="faq_3_answer"></textarea></div>
+            </div>
+            <div style="padding: 20px; border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;">
+              <h4 style="margin-bottom: 12px;">FAQ 5</h4>
+              <div class="admin-form-group"><label>Question</label><input type="text" name="faq_4_question"></div>
+              <div class="admin-form-group"><label>Answer</label><textarea name="faq_4_answer"></textarea></div>
+            </div>
+          </div>
+          <button class="admin-btn-save" data-section="faq" style="margin-top: 24px;">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="admin-section" data-section="contact">
+        <div class="admin-card">
+          <h3>Contact Information</h3>
+          <div class="admin-form-row">
+            <div class="admin-form-group"><label>Phone</label><input type="text" name="contact_phone"></div>
+            <div class="admin-form-group"><label>WhatsApp</label><input type="text" name="contact_whatsapp"></div>
+          </div>
+          <div class="admin-form-row">
+            <div class="admin-form-group"><label>Email</label><input type="text" name="contact_email"></div>
+            <div class="admin-form-group"><label>Address</label><input type="text" name="contact_address"></div>
+          </div>
+          <button class="admin-btn-save" data-section="contact">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- Hours Section -->
+      <div class="admin-section" data-section="hours">
+        <div class="admin-card">
+          <h3>Business Hours</h3>
+          <div class="admin-form-row">
+            <div class="admin-form-group"><label>Monday</label><input type="text" name="hours_monday"></div>
+            <div class="admin-form-group"><label>Tuesday</label><input type="text" name="hours_tuesday"></div>
+          </div>
+          <div class="admin-form-row">
+            <div class="admin-form-group"><label>Wednesday</label><input type="text" name="hours_wednesday"></div>
+            <div class="admin-form-group"><label>Thursday</label><input type="text" name="hours_thursday"></div>
+          </div>
+          <div class="admin-form-row">
+            <div class="admin-form-group"><label>Friday</label><input type="text" name="hours_friday"></div>
+            <div class="admin-form-group"><label>Saturday</label><input type="text" name="hours_saturday"></div>
+          </div>
+          <div class="admin-form-group"><label>Sunday</label><input type="text" name="hours_sunday"></div>
+          <button class="admin-btn-save" data-section="hours">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- Pricing Section -->
+      <div class="admin-section" data-section="pricing">
+        <div class="admin-card">
+          <h3>Pricing Information</h3>
+          <div class="admin-form-row">
+            <div class="admin-form-group"><label>Gym Monthly</label><input type="text" name="price_gym_monthly"></div>
+            <div class="admin-form-group"><label>Gym Quarterly</label><input type="text" name="price_gym_quarterly"></div>
+          </div>
+          <div class="admin-form-group"><label>Gym Yearly</label><input type="text" name="price_gym_yearly"></div>
+          <div class="admin-form-group"><label>Pricing Note</label><textarea name="price_note"></textarea></div>
+          <button class="admin-btn-save" data-section="pricing">Save Changes</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
