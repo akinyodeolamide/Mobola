@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Mobola Physiotherapy & Gym Center Abeokuta</title>
+  <meta name="description" content="Contact Mobola Physiotherapy & Gym Center in Abeokuta. Book appointments, request home services, or send us a message.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E&#x1F4AA;%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <nav class="navbar scrolled" aria-label="Main navigation">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo"><span class="logo-text">MOBOLA</span><span class="logo-sub">Physiotherapy & Gym Center</span></a>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+        <li role="none"><a href="services.html" class="nav-link" role="menuitem">Services</a></li>
+        <li role="none"><a href="about.html" class="nav-link" role="menuitem">About Mobola</a></li>
+        <li role="none"><a href="contact.html" class="nav-link active" role="menuitem">Contact</a></li>
+        <li role="none"><a href="booking.html" class="nav-link nav-cta" role="menuitem">Book Appointment</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Toggle mobile menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  <div class="mobile-nav" role="dialog" aria-label="Mobile menu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Mobola</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html">Book Appointment</a></li>
+    </ul>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We are here to help. Reach out for appointments, enquiries, or just to say hello.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-form-wrapper">
+            <h3 style="margin-bottom: 24px;">Send a Message</h3>
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+              <p style="display: none;">
+                <label>Do not fill this: <input name="bot-field" /></label>
+              </p>
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-phone">Phone Number *</label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-input" required placeholder="+234 803 XXX XXXX">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Subject</label>
+                <select id="contact-subject" name="subject" class="form-select">
+                  <option value="general">General Enquiry</option>
+                  <option value="appointment">Book Appointment</option>
+                  <option value="home-service">Home Service Request</option>
+                  <option value="gym">Gym Membership</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message *</label>
+                <textarea id="contact-message" name="message" class="form-textarea" required placeholder="How can we help you?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message
+                <span aria-hidden="true">&#8594;</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-info-card">
+            <h3 style="margin-bottom: 20px;">Contact Information</h3>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#128205;</div>
+              <div class="contact-info-text">
+                <h4>Address</h4>
+                <p data-content="contact_address">Abeokuta, Ogun State, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#128222;</div>
+              <div class="contact-info-text">
+                <h4>Phone</h4>
+                <a href="tel:+2348030000000" data-content="contact_phone">+234 803 XXX XXXX</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#128172;</div>
+              <div class="contact-info-text">
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/2348030000000" target="_blank" rel="noopener" data-content="contact_whatsapp">+234 803 XXX XXXX</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#128231;</div>
+              <div class="contact-info-text">
+                <h4>Email</h4>
+                <a href="mailto:info@mobolaphysio.com" data-content="contact_email">info@mobolaphysio.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#128336;</div>
+              <div class="contact-info-text">
+                <h4>Business Hours</h4>
+                <p>Mon - Fri: <span data-content="hours_monday">7:00 AM - 8:00 PM</span></p>
+                <p>Saturday: <span data-content="hours_saturday">8:00 AM - 6:00 PM</span></p>
+                <p>Sunday: <span data-content="hours_sunday">10:00 AM - 4:00 PM</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-contact-buttons">
+            <a href="https://wa.me/2348030000000?text=Hello%20Mobola" class="quick-contact-btn whatsapp" target="_blank" rel="noopener">
+              <span>&#128172;</span> Chat on WhatsApp
+            </a>
+            <a href="tel:+2348030000000" class="quick-contact-btn phone">
+              <span>&#128222;</span> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="map" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Location</span>
+        <h2>Find Us</h2>
+        <p>We are conveniently located in Abeokuta, Ogun State.</p>
+      </div>
+
+      <div class="map-container reveal">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126769.09828936568!2d3.298!3d7.1604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a1c5c9abcdef1%3A0x1234567890abcdef!2sAbeokuta%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1234567890"
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mobola Physiotherapy & Gym Center Location"
+        ></iframe>
+      </div>
+
+      <div style="text-align: center; margin-top: 24px;">
+        <a href="https://maps.google.com/?q=Abeokuta,Ogun+State,Nigeria" class="btn btn-secondary" target="_blank" rel="noopener">
+          Open in Google Maps
+          <span aria-hidden="true">&#8594;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container">
+      <div class="reveal">
+        <h2>We Are Here For You</h2>
+        <p>Do not let pain or discomfort hold you back. Reach out today and take the first step towards a healthier life.</p>
+        <div class="final-cta-buttons">
+          <a href="booking.html" class="btn btn-primary btn-lg">Book Appointment <span aria-hidden="true">&#8594;</span></a>
+          <a href="https://wa.me/2348030000000" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-text">MOBOLA</span><span class="logo-sub">Physiotherapy & Gym Center</span></a>
+          <p>Professional physiotherapy, massage therapy, and fitness services in Abeokuta, Ogun State.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Physiotherapy</a></li>
+            <li><a href="services.html">Massage</a></li>
+            <li><a href="services.html">Gym</a></li>
+            <li><a href="services.html">Home Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-item"><span>&#128205;</span><span data-content="contact_address">Abeokuta, Ogun State, Nigeria</span></div>
+          <div class="footer-contact-item"><span>&#128222;</span><a href="tel:+2348030000000" data-content="contact_phone">+234 803 XXX XXXX</a></div>
+          <div class="footer-contact-item"><span>&#128231;</span><a href="mailto:info@mobolaphysio.com" data-content="contact_email">info@mobolaphysio.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2024 Mobola Physiotherapy & Gym Center. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
